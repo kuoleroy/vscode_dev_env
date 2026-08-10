@@ -1,0 +1,54 @@
+# Editor
+.vscode/server/
+*.code-workspace.user
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+vendor/
+.bundle/
+
+# Build artifacts
+dist/
+build/
+out/
+target/
+bin/
+obj/
+*.o
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+*.local
+*.local.json
+
+# Logs & temp
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+*.iml
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+
+# Coverage & caches
+coverage/
+.cache/
+.pytest_cache/
+.eslintcache
+tsconfig.tsbuildinfo
