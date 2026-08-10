@@ -1,5 +1,7 @@
 {
-  "//": "完整可生效版本：包含 _base/settings.common.json 全量内容",
+  // ────────────────────────────────────────────────────────────────
+  // ① 通用设置 · 取自 _base/settings.common.json（跨栈共享）
+  // ────────────────────────────────────────────────────────────────
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "file",
   "editor.codeActionsOnSave": {
@@ -43,6 +45,10 @@
   "git.confirmSync": false,
   "workbench.startupEditor": "none",
   "terminal.integrated.defaultProfile.windows": "PowerShell",
+
+  // ────────────────────────────────────────────────────────────────
+  // ② React 专属设置（均为新增项，无覆盖）
+  // ────────────────────────────────────────────────────────────────
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "eslint.validate": [
     "javascript",
