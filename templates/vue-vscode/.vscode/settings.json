@@ -1,0 +1,10 @@
+{
+  "//": "仅本栈差异。使用前将 templates/_base/settings.common.json 内容合并进来，作为项目 .vscode/settings.json",
+  "editor.defaultFormatter": "Vue.volar",
+  "eslint.validate": [
+    "vue",
+    "javascript",
+    "typescript"
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
