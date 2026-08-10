@@ -14,7 +14,9 @@ vscode_dev_env/
 ├── node-vscode/.vscode/      # JS / TS / Node 专属
 ├── vue-vscode/.vscode/       # Vue 专属
 ├── react-vscode/.vscode/     # React 专属
-└── miniprogram-vscode/.vscode/  # 微信小程序专属
+├── miniprogram-vscode/.vscode/  # 微信小程序专属
+├── go-vscode/.vscode/        # Go 专属
+└── rust-vscode/.vscode/      # Rust 专属
 ```
 
 ## 使用方式
@@ -58,6 +60,8 @@ Copy-Item -Recurse "E:\kuoleroy\vscode_dev_env\templates\python-vscode\." "C:\�
 | vue | Volar | eslint 校验 .vue，tsdk 本地 |
 | react | prettier | eslint（jsx/tsx），tsdk 本地 |
 | miniprogram | prettier（JS/JSON）+ minapp（WXML） | DevTools CLI 任务、jest 单测 |
+| go | gofmt（Go 扩展，Tab 缩进） | dlv 调试（本地/远程）、go test/vet |
+| rust | rustfmt（rust-analyzer，4 空格） | cargo 任务、LLDB 调试（二进制名按提示填写） |
 
 ## 其他说明
 
