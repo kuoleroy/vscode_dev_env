@@ -10,10 +10,11 @@ vscode_dev_env/
 └── templates/
     ├── _base/
     │   └── settings.common.json  # 跨栈通用设置（规范文档，不拷贝进项目）
-    ├── python-vscode/.vscode/    # Python 专属
-    ├── node-vscode/.vscode/      # JS / TS / Node 专属
-    ├── vue-vscode/.vscode/       # Vue 专属
-    └── react-vscode/.vscode/     # React 专属
+├── python-vscode/.vscode/    # Python 专属
+├── node-vscode/.vscode/      # JS / TS / Node 专属
+├── vue-vscode/.vscode/       # Vue 专属
+├── react-vscode/.vscode/     # React 专属
+└── miniprogram-vscode/.vscode/  # 微信小程序专属
 ```
 
 ## 使用方式
@@ -56,9 +57,11 @@ Copy-Item -Recurse "E:\kuoleroy\vscode_dev_env\templates\python-vscode\." "C:\�
 | node | prettier | eslint、tsdk 指向本地 typescript |
 | vue | Volar | eslint 校验 .vue，tsdk 本地 |
 | react | prettier | eslint（jsx/tsx），tsdk 本地 |
+| miniprogram | prettier（JS/JSON）+ minapp（WXML） | DevTools CLI 任务、jest 单测 |
 
 ## 其他说明
 
 - `settings.json` / `launch.json` / `tasks.json` 是 JSONC 格式（允许注释）；
 - `extensions.json` 是严格 JSON（不允许注释）；
 - 调试 Chrome 时无需手动启动 dev server：`launch.json` 内置 `serverReadyAction`，等待终端输出启动地址后自动打开调试器。
+- 微信小程序：页面调试在微信开发者工具内进行；`tasks.json` 的 CLI 任务（打开项目 / 构建 npm / 预览 / 上传）需要先开启开发者工具「设置 → 安全设置 → 服务端口」，并在 `settings.json` 的 `miniprogram.cliPath` 配置 cli.bat 路径（Windows 默认安装路径已预填）。
